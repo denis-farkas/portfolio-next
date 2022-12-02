@@ -11,7 +11,7 @@ function Header() {
       <div className={`contenedor ${styles.barre}`}>
         <Link href={"/"}>
           <a>
-            <Image src="/img/logo.png" width={386} height={50} alt="logo" />
+            <Image src="/img/logo.png" width={302} height={40} alt="logo" />
           </a>
         </Link>
         <nav className={styles.navigation}>

@@ -4,7 +4,7 @@
   flex-wrap: wrap;
   border: 2px solid rgb(253, 137, 1);
   border-radius: 10px;
-  background-color: rgba(253, 135, 1, 0.108);
+  margin-top: 5rem;
 }
 
 .content_left {
@@ -16,19 +16,28 @@
 
 .subtitles {
   margin-left: 10rem;
-  color: rgb(185, 67, 50);
-  font-size: 5rem;
+  color: rgb(124, 122, 121);
+  font-size: 3rem;
   letter-spacing: 2.4px;
   font-weight: 500;
 }
 
 .title {
-  margin-top: 2rem;
+  margin-top: 1rem;
   margin-left: 10rem;
   color: black;
   font-size: 6rem;
   font-weight: 700;
   line-height: 1;
+}
+
+.paragraphe {
+  margin-top: 4rem;
+  margin-left: 10rem;
+  color: rgb(36, 35, 35);
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.5;
 }
 
 .content_right {
@@ -42,116 +51,81 @@
 }
 
 .content_footer {
+  margin: 4rem 0;
   width: 100%;
-  height: 27rem;
+  height: 28rem;
   display: grid;
+  grid-template-areas: "integrate php react";
   gap: 1rem;
-  grid-template-columns: repeat(6, 1fr);
-  grid-template-rows: 1fr 1fr;
-  margin-bottom: 3rem;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
 }
 
-.web {
-  grid-area: 1/1/3/3;
-  border: 2px solid rgb(253, 137, 1);
-  background-color: rgba(253, 135, 1, 0.108);
-  border-radius: 10px;
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.web_inf {
-  height: 100%;
-  width: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 2rem;
-}
-
-.web_p {
-  font-weight: 600;
-  color: rgb(147, 53, 38);
-}
-
-.web_sup {
-  height: 100%;
-  width: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 2rem;
-}
-
-.back {
-  grid-area: 1/3/2/5;
-  border: 2px solid rgb(185, 67, 50);
-  border-radius: 10px;
-  display: flex;
-  flex-wrap: nowrap;
-  color: rgb(147, 53, 38);
-  background-color: rgba(253, 135, 1, 0.108);
-}
-
-.left {
-  width: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0.5rem 2rem;
-}
-
-.left_p {
-  font-size: 1.7rem;
-  font-weight: 600;
-}
-
-.right {
-  width: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 1rem;
-}
-
-.center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.front {
-  grid-area: 2/3/3/5;
-  background-color: rgba(253, 135, 1, 0.108);
+.php,
+.react,
+.integrate {
   border: 2px solid rgb(244, 126, 86);
   border-radius: 10px;
-  color: rgb(147, 53, 38);
+}
+
+.integrate {
+  grid-area: integrate;
+}
+.php {
+  grid-area: php;
+}
+.react {
+  grid-area: react;
+  padding: 1rem 3rem;
+}
+.media {
+  width: 469px;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
   display: flex;
-  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
 }
 
-.integration {
-  grid-area: 1/5/2/7;
-  background-color: rgba(253, 135, 1, 0.108);
-  border: 2px solid rgb(97, 139, 118);
-  border-radius: 10px;
-  color: rgb(147, 53, 38);
+.layer {
+  opacity: 0;
+  position: absolute;
   display: flex;
-  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 10px;
+  height: 90%;
+  background: #fff;
+  color: #151e3f;
+  transition: all 0.9s ease;
 }
 
-.nocode {
-  grid-area: 2/5/3/6;
-  background-color: rgba(253, 135, 1, 0.108);
-  border: 2px solid rgb(193, 147, 97);
-  border-radius: 10px;
+.layer .layer_text {
+  transition: all 0.9s ease;
+  transform: scale(0.1);
 }
 
-.projet {
-  grid-area: 2/6/3/7;
-  background-color: rgba(253, 135, 1, 0.108);
-  border: 2px solid rgb(1, 1, 6);
-  border-radius: 10px;
+.layer_text {
+  text-align: center;
+  font-size: 15px;
+  letter-spacing: 1px;
+}
+
+.media:hover .layer {
+  opacity: 0.8;
+  width: 90%;
+  transition: all 0.5s ease;
+}
+.media:hover .layer .layer_text {
+  transform: scale(1);
+  transition: all 0.5s ease;
+}
+.contacts {
+  list-style: none;
+}
+.adresse {
+  margin: 2rem 0;
 }
 
 @media screen and (min-width: 768px) {

@@ -13,85 +13,98 @@ export default function Home() {
         <div className={`contenedor ${styles.main}`}>
           <div className={styles.content_left}>
             <div className={styles.subtitles}>Atelier</div>
-            <div className={styles.title}>Développeur web</div>
+            <div className={styles.title}>Développement web</div>
+            <div className={styles.paragraphe}>
+              Qu&#39;il s&#39;agisse de l&#39;intégration de maquettes, du
+              développement de nouvelles fonctionnalités ou de la création
+              intégrale d&#39;un site internet, notre atelier est à votre
+              disposition, pour étudier ensemble, les solutions techniques les
+              plus adaptées à vos besoins.
+            </div>
           </div>
           <div className={styles.content_right}>
             <Image
               className={styles.img}
               src="/img/crop.png"
-              width={1000}
-              height={498}
+              width={1004}
+              height={500}
               alt="logo"
             />
           </div>
         </div>
         <div className={styles.content_footer}>
-          <div className={styles.web}>
-            <div className={styles.web_sup}>
+          <div className={styles.integrate}>
+            <div className={styles.media}>
+              <div className={styles.layer}>
+                <p className={styles.layer_text}>Intégration Frontend</p>
+              </div>
               <Image
                 className={styles.img}
-                src="/img/support.png"
-                width={180}
-                height={201}
-                alt="support"
-              />
-            </div>
-            <div className={styles.web_inf}>
-              <p className={styles.web_p}>
-                Sites web adaptés sur tout support.
-              </p>
-            </div>
-          </div>
-          <div className={styles.back}>
-            <div className={styles.left}>
-              <p className={styles.left_p}>
-                Systèmes de gestion de données - Php, API rest -
-              </p>
-            </div>
-            <div className={styles.right}>
-              <Image
-                className={styles.img}
-                src="/img/bdd.png"
-                width={100}
-                height={100}
-                alt="bdd"
+                src="/img/basket.jpg"
+                width={369}
+                height={276}
+                alt="exemple integration"
               />
             </div>
           </div>
-          <div className={styles.front}>
-            <div className={styles.left}>
+          <div className={styles.php}>
+            <div className={styles.media}>
+              <div className={styles.layer}>
+                <p className={styles.layer_text}>Intégration Frontend</p>
+              </div>
               <Image
                 className={styles.img}
-                src="/img/front.png"
-                width={100}
-                height={100}
-                alt="frontend"
-              />
-            </div>
-            <div className={styles.right}>
-              <p className={styles.left_p}>
-                Pages dynamiques et interactives (Css, Php, Javascript, React)
-              </p>
-            </div>
-          </div>
-          <div className={styles.integration}>
-            <div className={styles.left}>
-              <p className={styles.left_p}>
-                Intégration de maquettes et croquis.(Moqups.com, Figma)
-              </p>
-            </div>
-            <div className={styles.right}>
-              <Image
-                className={styles.img}
-                src="/img/figma.png"
-                width={110}
-                height={110}
-                alt="maquettes"
+                src="/img/panama.jpg"
+                width={369}
+                height={276}
+                alt="exemple php"
               />
             </div>
           </div>
-          <div className={styles.nocode}>nocode</div>
-          <div className={styles.projet}>projet</div>
+          <div className={styles.react}>
+            <h4>Informations</h4>
+            <ul className={styles.contacts}>
+              <li className={styles.adresse}>
+                <Image
+                  className={styles.img}
+                  src="/img/cv.png"
+                  width={24}
+                  height={24}
+                  alt="cv"
+                />
+                <span>
+                  <Link href="/pagepdf">Curriculum</Link>
+                </span>
+              </li>
+              <li className={styles.adresse}>
+                <Image
+                  className={styles.img}
+                  src="/img/email.png"
+                  width={24}
+                  height={24}
+                  alt="email"
+                />
+              </li>
+              <li className={styles.adresse}>
+                <Image
+                  className={styles.img}
+                  src="/img/linkedin.png"
+                  width={24}
+                  height={24}
+                  alt="linkedin"
+                />
+              </li>
+              <li className={styles.adresse}>
+                <Image
+                  className={styles.img}
+                  src="/img/github.png"
+                  width={24}
+                  height={24}
+                  alt="github"
+                />
+              </li>
+            </ul>
+          </div>
         </div>
       </Layout>
     </>
