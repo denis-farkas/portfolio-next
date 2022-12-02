@@ -124,8 +124,29 @@
 .contacts {
   list-style: none;
 }
+.react_title {
+  margin-block-start: 0.5rem;
+  margin-block-end: 0.5rem;
+}
 .adresse {
-  margin: 2rem 0;
+  margin: 0.5rem 0;
+  display: inline-flex;
+  align-items: center;
+  width: 80%;
+}
+
+.adresse a {
+  color: var(--black);
+  text-decoration: none;
+  margin: 0 1rem;
+  font-size: 2rem;
+  font-weight: 500;
+  display: block;
+}
+
+.email {
+  padding-left: 1rem;
+  width: 80%;
 }
 
 @media screen and (min-width: 768px) {

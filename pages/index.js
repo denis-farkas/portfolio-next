@@ -62,7 +62,7 @@ export default function Home() {
             </div>
           </div>
           <div className={styles.react}>
-            <h4>Informations</h4>
+            <h4 className={styles.react_title}>Informations</h4>
             <ul className={styles.contacts}>
               <li className={styles.adresse}>
                 <Image
@@ -72,9 +72,9 @@ export default function Home() {
                   height={24}
                   alt="cv"
                 />
-                <span>
-                  <Link href="/pagepdf">Curriculum</Link>
-                </span>
+                <Link href="/cv">
+                  <a>Curriculum</a>
+                </Link>
               </li>
               <li className={styles.adresse}>
                 <Image
@@ -84,6 +84,7 @@ export default function Home() {
                   height={24}
                   alt="email"
                 />
+                <span className={styles.email}>dfarkas960@gmail.com</span>
               </li>
               <li className={styles.adresse}>
                 <Image
@@ -93,6 +94,13 @@ export default function Home() {
                   height={24}
                   alt="linkedin"
                 />
+                <span className={styles.email}>
+                  <Link href="https://www.linkedin.com/in/denis-farkas/">
+                    <a target="_blank" rel="noopener noreferrer">
+                      Linkedin
+                    </a>
+                  </Link>
+                </span>
               </li>
               <li className={styles.adresse}>
                 <Image
@@ -102,6 +110,13 @@ export default function Home() {
                   height={24}
                   alt="github"
                 />
+                <span className={styles.email}>
+                  <Link href="https://github.com/denis-farkas/">
+                    <a target="_blank" rel="noopener noreferrer">
+                      Github
+                    </a>
+                  </Link>
+                </span>
               </li>
             </ul>
           </div>
