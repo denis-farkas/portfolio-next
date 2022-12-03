@@ -35,22 +35,37 @@ export default function Home() {
         <div className={styles.content_footer}>
           <div className={styles.integrate}>
             <div className={styles.media}>
+              <div className={styles.badge} tabindex="2">
+                Découvrir
+              </div>
               <div className={styles.layer}>
-                <p className={styles.layer_text}>Intégration Frontend</p>
+                <p className={styles.layer_text}>
+                  Création et Intégration de maquettes Figma. HTML 5, SCSS,
+                  Bootstrap 5, Javascript Vanilla, React sont nos technologies
+                  Frontend.
+                </p>
               </div>
               <Image
                 className={styles.img}
                 src="/img/basket.jpg"
-                width={369}
-                height={276}
+                width={334}
+                height={241}
                 alt="exemple integration"
               />
             </div>
           </div>
           <div className={styles.php}>
             <div className={styles.media}>
+              <div className={styles.badge} tabindex="2">
+                Découvrir
+              </div>
               <div className={styles.layer}>
-                <p className={styles.layer_text}>Intégration Frontend</p>
+                <p className={styles.layer_text}>
+                  Php, Codeigniter, Symfony, MySql ou environnement NodeJs MERN.
+                  <br />
+                  Des systèmes de gestion de données relationnels, ou non
+                  relationnels, robustes et sécurisés.
+                </p>
               </div>
               <Image
                 className={styles.img}
