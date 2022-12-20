@@ -20,7 +20,7 @@ export default function Home() {
   if (!data) return <div>Loading...</div>;
   //Handle the ready state and display the result contained in the data object mapped to the structure of the json file
   const { projects } = data;
-  console.log(projects);
+
   return (
     <>
       <Layout
