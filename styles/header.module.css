@@ -1,3 +1,10 @@
+.header {
+  background-color: white;
+  border-radius: 10px;
+  padding: 1rem;
+  margin-top: 1rem;
+  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+}
 .barre {
   display: flex;
   flex-direction: column;
