@@ -11,7 +11,7 @@ function Projet({ projet }) {
       <div className={styles.card}>
         <div className={styles.media}>
           <div className={styles.layer}>
-            <div className={styles.badge} tabindex="2">
+            <div className={styles.badge} tabIndex="2">
               Voir
             </div>
             <p className={styles.layer_text}>{content}</p>

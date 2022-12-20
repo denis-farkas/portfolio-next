@@ -1,10 +1,26 @@
 import Link from "next/link";
+import useSWR from "swr";
 import Image from "next/future/image";
 import Layout from "../components/layout";
 import Projet from "../components/projet";
 import styles from "../styles/home.module.css";
 
-export default function Home({ projects }) {
+async function fetcherFunc(url) {
+  const res = await fetch(url);
+  return res.json();
+}
+
+export default function Home() {
+  const url = "http://localhost:3000/api/projects";
+  const { data, error } = useSWR(url, fetcherFunc);
+
+  //Handle the error state
+  if (error) return <div>Failed to load</div>;
+  //Handle the loading state
+  if (!data) return <div>Loading...</div>;
+  //Handle the ready state and display the result contained in the data object mapped to the structure of the json file
+  const { projects } = data;
+  console.log(projects);
   return (
     <>
       <Layout
@@ -66,15 +82,4 @@ export default function Home({ projects }) {
       </Layout>
     </>
   );
-}
-
-export async function getStaticProps() {
-  const response = await fetch("http://127.0.0.1:1337/api/projects/");
-  const { data: projects } = await response.json();
-
-  return {
-    props: {
-      projects,
-    },
-  };
 }
