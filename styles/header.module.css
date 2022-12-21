@@ -3,7 +3,7 @@
   border-radius: 10px;
   padding: 1rem;
   margin-top: 1rem;
-  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+  box-shadow: 1px 2px 7px 0px rgba(105, 103, 103, 0.33);
 }
 .barre {
   display: flex;

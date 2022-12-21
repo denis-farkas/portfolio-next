@@ -61,9 +61,9 @@ export default function Home() {
             height={80}
             alt="déco"
           />
-          <h2 className={styles.title_section}>
-            FRONT-END: Aspects ergonomiques
-          </h2>
+          <div className={styles.title_section}>
+            <h2>FRONT-END: Aspects ergonomiques</h2>
+          </div>
         </div>
         <div className={styles.container_example}>
           {projects.map((projet) => (
@@ -78,9 +78,9 @@ export default function Home() {
             height={80}
             alt="déco"
           />
-          <h2 className={styles.title_section}>
-            BACK-END: Aspects techniques et fonctionnels
-          </h2>
+          <div className={styles.title_section}>
+            <h2> BACK-END: Aspects techniques et fonctionnels</h2>
+          </div>
         </div>
         <div className={styles.container_example}>
           {projects.map((projet) => (
