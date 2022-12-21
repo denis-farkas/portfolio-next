@@ -13,8 +13,8 @@ async function fetcherFunc(url) {
 }
 
 export default function Home() {
-  //const url = "https://portfolio-next-delta.vercel.app/api/projects";
-  const url = "http://localhost:3000/api/projects";
+  const url = "https://portfolio-next-delta.vercel.app/api/projects";
+  //const url = "http://localhost:3000/api/projects";
   const { data, error } = useSWR(url, fetcherFunc);
 
   //Handle the error state
