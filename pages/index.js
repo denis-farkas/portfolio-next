@@ -2,8 +2,10 @@ import Link from "next/link";
 import useSWR from "swr";
 import Image from "next/future/image";
 import Layout from "../components/layout";
-import Projet from "../components/projet";
+import Projet from "../components/projet_back";
 import styles from "../styles/home.module.css";
+import Projet_back from "../components/projet_back";
+import Projet_front from "../components/projet_front";
 
 async function fetcherFunc(url) {
   const res = await fetch(url);
@@ -11,7 +13,8 @@ async function fetcherFunc(url) {
 }
 
 export default function Home() {
-  const url = "https://portfolio-next-delta.vercel.app/api/projects";
+  //const url = "https://portfolio-next-delta.vercel.app/api/projects";
+  const url = "http://localhost:3000/api/projects";
   const { data, error } = useSWR(url, fetcherFunc);
 
   //Handle the error state
@@ -59,8 +62,13 @@ export default function Home() {
             alt="déco"
           />
           <h2 className={styles.title_section}>
-            FRONT-END: Création et intégration d&apos;interfaces web
+            FRONT-END: Aspects ergonomiques
           </h2>
+        </div>
+        <div className={styles.container_example}>
+          {projects.map((projet) => (
+            <Projet_front key={projet.id} projet={projet.attributes} />
+          ))}
         </div>
         <div className={styles.example}>
           <Image
@@ -71,12 +79,12 @@ export default function Home() {
             alt="déco"
           />
           <h2 className={styles.title_section}>
-            BACK-END: Gestion des usagers et des données
+            BACK-END: Aspects techniques et fonctionnels
           </h2>
         </div>
         <div className={styles.container_example}>
           {projects.map((projet) => (
-            <Projet key={projet.id} projet={projet.attributes} />
+            <Projet_back key={projet.id} projet={projet.attributes} />
           ))}
         </div>
       </Layout>
