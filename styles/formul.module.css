@@ -1,0 +1,38 @@
+.inputGroup {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  margin: 7rem auto;
+}
+.inputLabel {
+  text-align: left;
+}
+.inputField {
+  height: 6rem;
+  border-radius: 10px;
+  border: 2px solid orange;
+  padding: 1rem;
+}
+
+.textarea {
+  height: 12rem;
+  border-radius: 10px;
+  border: 2px solid orange;
+  padding: 1rem;
+}
+
+.submitButton {
+  height: 6rem;
+  width: 10rem;
+  border-radius: 10px;
+  color: white;
+  background-color: orange;
+  border: none;
+  margin: 1rem auto;
+}
+
+.submitButton:hover {
+  border: 2px solid orange;
+  color: orange;
+  background-color: white;
+}

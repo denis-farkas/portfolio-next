@@ -1,14 +1,15 @@
 import Link from "next/link";
 import Layout from "../components/layout";
+import Formul from "../components/formul";
 
-function About() {
+function Contact() {
   return (
     <Layout>
       <div>
-        <h1>About</h1>
+        <Formul />
       </div>
     </Layout>
   );
 }
 
-export default About;
+export default Contact;

@@ -13,14 +13,12 @@ function Footer() {
               Accueil
             </a>
           </Link>
-          <Link href="/about">
-            <a className={router.pathname === "/about" ? styles.active : ""}>
-              A propos
-            </a>
+          <Link href="/#projets">
+            <a>Projets</a>
           </Link>
-          <Link href="/gallery">
-            <a className={router.pathname === "/gallery" ? styles.active : ""}>
-              Projets
+          <Link href="/contact">
+            <a className={router.pathname === "/contact" ? styles.active : ""}>
+              Contactez-moi
             </a>
           </Link>
         </nav>
