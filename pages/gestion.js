@@ -14,10 +14,6 @@ export const getStaticProps = async () => {
 
 const Gestion = ({ messages }) => {
   const router = useRouter();
-  function convert(item) {
-    const fecha = new Date(item);
-    return fecha.toLocaleDateString();
-  }
 
   if (router.query.administred === "ok") {
     return (
@@ -28,7 +24,7 @@ const Gestion = ({ messages }) => {
               <li>{item.name}</li>
               <li>{item.email}</li>
               <li>{item.message}</li>
-              <li>{`${convert(item.date)}`}</li>
+              <li>{item.date}</li>
             </ul>
           ))}
         </div>

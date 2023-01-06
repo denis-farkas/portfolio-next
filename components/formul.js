@@ -13,7 +13,8 @@ const Formul = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log("Sending");
-    const date = Date.now().toString();
+    const d = new Date();
+    const date = d.toLocaleDateString();
     let data = {
       name,
       email,
