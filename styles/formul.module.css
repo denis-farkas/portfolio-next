@@ -28,11 +28,20 @@
   color: white;
   background-color: orange;
   border: none;
-  margin: 1rem auto;
+  margin: 0.5rem auto;
 }
 
 .submitButton:hover {
   border: 2px solid orange;
   color: orange;
   background-color: white;
+}
+
+.container_formul {
+  margin: 0.5rem 0;
+  background-color: rgba(232, 232, 232, 0.869);
+}
+
+.main {
+  padding: 1rem;
 }

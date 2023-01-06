@@ -4,7 +4,7 @@ import styles from "../styles/projet_bf.module.css";
 
 function Projet_back({ projet }) {
   const { name, content, image_1, integration, url } = projet;
-  const condition = integration ? "green" : "blue";
+  const condition = integration ? "orange" : "pink";
 
   return (
     <article>

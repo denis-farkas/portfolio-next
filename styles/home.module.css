@@ -52,46 +52,6 @@
   border-radius: 7.5px;
 }
 
-.imagen {
-  display: none;
-  border-radius: 7.5px 0 0 7.5px;
-  margin-right: 4rem;
-  width: 134px;
-  height: 40px;
-}
-
-.title_section {
-  text-align: center;
-  font-size: 2rem;
-  margin: 2rem;
-  padding: 0 1rem;
-}
-
-.example {
-  height: 80px;
-  border-radius: 10px 0 0 10px;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  margin-top: 3rem;
-  background-color: white;
-}
-
-.center {
-  text-align: center;
-}
-.explain {
-  width: 75%;
-  margin: 4rem auto;
-}
-.explain_text {
-  font-size: 2.5rem;
-  font-weight: 700;
-  letter-spacing: 2.4px;
-  text-align: center;
-  line-height: 2;
-}
-
 @media screen and (min-width: 1024px) {
   .main {
     width: 100%;
@@ -119,18 +79,6 @@
     width: 50%;
   }
 
-  .example {
-    height: 80px;
-    border-radius: 10px 0 0 10px;
-    border-top: 2px solid #e99401;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    margin-top: 6rem;
-    background-color: white;
-    z-index: 1;
-  }
-
   .container_example {
     display: flex;
     flex-wrap: wrap;
@@ -146,29 +94,5 @@
     height: 80px;
     display: block;
     z-index: 0;
-  }
-  .title_section {
-    text-align: center;
-    font-size: 2rem;
-    border: none;
-    margin: 2rem 0;
-    padding: 0;
-    width: 60%;
-  }
-
-  .explain {
-    width: 75%;
-    margin: 4rem auto;
-  }
-  .explain_text {
-    font-size: 2.2rem;
-    font-weight: 700;
-    letter-spacing: 2.4px;
-    text-align: center;
-    line-height: 2;
-  }
-  .zone {
-    background-color: rgb(245, 242, 238);
-    border-radius: 10px;
   }
 }

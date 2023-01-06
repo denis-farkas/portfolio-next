@@ -18,7 +18,7 @@ function Footer() {
           </Link>
           <Link href="/contact">
             <a className={router.pathname === "/contact" ? styles.active : ""}>
-              Contactez-moi
+              Contacts
             </a>
           </Link>
         </nav>

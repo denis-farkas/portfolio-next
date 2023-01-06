@@ -2,12 +2,12 @@
   border-radius: 10px;
   padding: 1rem;
   width: 99%;
-  margin: 2rem auto;
+  margin: 1rem auto;
 }
 
 .infos_header {
   width: 70%;
-  margin: 1rem auto;
+  margin: 0 auto;
 }
 
 .infos_body {
@@ -39,7 +39,7 @@
 }
 
 .infos_left .card_infos .card_header {
-  background-color: rgb(74, 207, 129);
+  background-color: rgb(255, 130, 67);
   border-radius: 10px;
 }
 
@@ -87,7 +87,7 @@
     border-radius: 10px;
     padding: 3rem;
     width: 85%;
-    margin: 8rem auto;
+    margin: 2rem auto;
   }
 
   .infos_header {
@@ -121,19 +121,15 @@
   }
 
   .card_infos {
-    background-color: rgb(29, 32, 73);
     height: 230px;
     width: 100%;
-    border-radius: 10px;
   }
 
   .infos_right .card_infos .card_header {
-    background-color: rgb(255, 92, 124);
     border-radius: 10px;
   }
 
   .infos_left .card_infos .card_header {
-    background-color: rgb(74, 207, 129);
     border-radius: 10px;
   }
 

@@ -43,7 +43,7 @@ const Formul = () => {
   };
 
   return (
-    <div className={styles.container}>
+    <div className={styles.container_formul}>
       <form className={styles.main} onSubmit={handleSubmit}>
         <formGroup className={styles.inputGroup}>
           <label htmlFor="name">Name</label>
