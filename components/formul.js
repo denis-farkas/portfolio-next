@@ -15,6 +15,7 @@ const Formul = () => {
     console.log("Sending");
     const d = new Date();
     const date = d.toLocaleDateString();
+    console.log(date);
     let data = {
       name,
       email,

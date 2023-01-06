@@ -2,7 +2,7 @@ import Layout from "../components/layout";
 import { useRouter } from "next/router";
 import { PrismaClient } from "@prisma/client";
 
-export const getStaticProps = async () => {
+export const getServerSideProps = async () => {
   const prisma = new PrismaClient();
   const messages = await prisma.contact.findMany();
   return {
