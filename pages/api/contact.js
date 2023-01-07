@@ -20,9 +20,17 @@ export default async function handler(req, res) {
   }
 
   if (req.method === "DELETE") {
-    const deleteMessage = await prisma.contact.delete({
-      where: { email: req.body.item },
-    });
-    res.status(200);
+    handleDELETE(contactEmail, res);
+  } else {
+    throw new Error(
+      `The HTTP ${req.method} method is not supported at this route.`
+    );
   }
+}
+// DELETE /api/post/:id
+async function handleDELETE(contactEmail, res) {
+  const message = await prisma.contact.delete({
+    where: { email: contactEmail },
+  });
+  res.json(contact);
 }

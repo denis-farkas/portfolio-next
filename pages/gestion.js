@@ -13,9 +13,8 @@ export const getServerSideProps = async () => {
 };
 
 const effacer = (item) => {
-  fetch("/api/contact", {
+  fetch(`/api/contact/:${item}`, {
     method: "DELETE",
-    body: item,
   }).then((res) => {
     console.log("Response received");
     if (res.status === 200) {
