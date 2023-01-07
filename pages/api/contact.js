@@ -18,4 +18,11 @@ export default async function handler(req, res) {
     const contacts = await prisma.contact.findMany();
     res.status(200).json(contacts);
   }
+
+  if (req.method === "DELETE") {
+    const deleteMessage = await prisma.contact.delete({
+      where: { email: req.body.item },
+    });
+    res.status(200);
+  }
 }

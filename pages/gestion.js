@@ -12,6 +12,21 @@ export const getServerSideProps = async () => {
   };
 };
 
+const effacer = (item) => {
+  fetch("/api/contact", {
+    method: "DELETE",
+    body: item,
+  }).then((res) => {
+    console.log("Response received");
+    if (res.status === 200) {
+      toast.success("Message effacé");
+      setTimeout(() => {
+        router.push("/admin");
+      }, 3000);
+    }
+  });
+};
+
 const Gestion = ({ messages }) => {
   const router = useRouter();
 
@@ -25,6 +40,9 @@ const Gestion = ({ messages }) => {
               <li>{item.email}</li>
               <li>{item.message}</li>
               <li>{item.date}</li>
+              <li>
+                <button onClick={effacer(item.email)}>Effacer</button>
+              </li>
             </ul>
           ))}
         </div>
