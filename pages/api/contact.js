@@ -20,6 +20,7 @@ export default async function handler(req, res) {
   }
 
   if (req.method === "DELETE") {
+    const contactEmail = req.query.item;
     handleDELETE(contactEmail, res);
   } else {
     throw new Error(
