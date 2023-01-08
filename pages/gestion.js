@@ -1,6 +1,7 @@
 import Layout from "../components/layout";
 import { useRouter } from "next/router";
 import { PrismaClient } from "@prisma/client";
+import { toast } from "react-toastify";
 
 export const getServerSideProps = async () => {
   const prisma = new PrismaClient();
@@ -12,22 +13,14 @@ export const getServerSideProps = async () => {
   };
 };
 
-const effacer = (item) => {
-  fetch(`/api/contact/:${item}`, {
-    method: "DELETE",
-  }).then((res) => {
-    console.log("Response received");
-    if (res.status === 200) {
-      toast.success("Message effacé");
-      setTimeout(() => {
-        router.push("/admin");
-      }, 3000);
-    }
-  });
-};
-
 const Gestion = ({ messages }) => {
   const router = useRouter();
+
+  async function deleteMessage(id) {
+    await fetch(`/api/post/${id}`, {
+      method: "DELETE",
+    });
+  }
 
   if (router.query.administred === "ok") {
     return (
@@ -35,12 +28,13 @@ const Gestion = ({ messages }) => {
         <div>
           {messages.map((item, id) => (
             <ul key={id}>
+              <li>{item.id}</li>
               <li>{item.name}</li>
               <li>{item.email}</li>
               <li>{item.message}</li>
               <li>{item.date}</li>
               <li>
-                <button onClick={effacer(item.email)}>Effacer</button>
+                <button onClick={() => deleteMessage(item.id)}>Effacer</button>
               </li>
             </ul>
           ))}
