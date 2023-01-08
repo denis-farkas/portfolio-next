@@ -17,9 +17,12 @@ const Gestion = ({ messages }) => {
   const router = useRouter();
 
   async function deleteMessage(id) {
-    await fetch(`/api/post/${id}`, {
+    await fetch(`/api/message/${id}`, {
       method: "DELETE",
     });
+    setTimeout(() => {
+      router.push("/admin");
+    }, 3000);
   }
 
   if (router.query.administred === "ok") {
@@ -42,7 +45,13 @@ const Gestion = ({ messages }) => {
       </Layout>
     );
   } else {
-    return "";
+    return (
+      <Layout>
+        <div>
+          <p>Pas de nouveaux messages</p>
+        </div>
+      </Layout>
+    );
   }
 };
 
