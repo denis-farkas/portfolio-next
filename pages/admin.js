@@ -6,11 +6,10 @@ import { useRouter } from "next/router";
 function Admin() {
   const [administre, setAdministre] = useState("");
   const router = useRouter();
-  const key = "Df082365!";
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (administre === key) {
+    if (administre === process.env.password) {
       console.log("ok");
       setTimeout(() => {
         router.push(
