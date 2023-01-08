@@ -1,0 +1,25 @@
+.contain {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 2rem auto;
+}
+
+.liste {
+  list-style: none;
+  background-color: rgb(190, 190, 190);
+}
+
+.message {
+  padding: 1rem 2rem;
+}
+
+.message_text {
+  padding: 1rem 2rem;
+  background-color: rgb(255, 255, 255);
+}
+
+.cadre {
+  padding: 6rem;
+  background-color: rgb(190, 190, 190);
+}

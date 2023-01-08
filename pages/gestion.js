@@ -2,6 +2,7 @@ import Layout from "../components/layout";
 import { useRouter } from "next/router";
 import { PrismaClient } from "@prisma/client";
 import { toast } from "react-toastify";
+import styles from "../styles/gestion.module.css";
 
 export const getServerSideProps = async () => {
   const prisma = new PrismaClient();
@@ -28,27 +29,26 @@ const Gestion = ({ messages }) => {
   if (router.query.administred === "ok") {
     return (
       <Layout>
-        <div>
+        <div className={styles.contain}>
           {messages.map((item, id) => (
-            <ul key={id}>
-              <li>{item.id}</li>
-              <li>{item.name}</li>
-              <li>{item.email}</li>
-              <li>{item.message}</li>
-              <li>{item.date}</li>
-              <li>
-                <button onClick={() => deleteMessage(item.id)}>Effacer</button>
+            <ul className={styles.liste} key={id}>
+              <li className={styles.message}>ID : {item.id}</li>
+              <li className={styles.message}>Nom : {item.name}</li>
+              <li className={styles.message}>Email : {item.email}</li>
+              <li className={styles.message}>
+                <p className={styles.message_text}>Message : {item.message}</p>
+              </li>
+              <li className={styles.message}>Date : {item.date}</li>
+              <li className={styles.message}>
+                <button
+                  className={styles.bouton}
+                  onClick={() => deleteMessage(item.id)}
+                >
+                  Effacer
+                </button>
               </li>
             </ul>
           ))}
-        </div>
-      </Layout>
-    );
-  } else {
-    return (
-      <Layout>
-        <div>
-          <p>Pas de nouveaux messages</p>
         </div>
       </Layout>
     );
