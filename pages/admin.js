@@ -9,7 +9,7 @@ function Admin() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (administre === process.env.password) {
+    if (administre === process.env.PASSWORD) {
       console.log("ok");
       setTimeout(() => {
         router.push(
