@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "@prisma/client": "^4.8.0",
+    "@vercel/analytics": "^0.1.8",
     "dotenv": "^16.0.3",
     "next": "12.3.1",
     "nodemailer": "^6.8.0",
