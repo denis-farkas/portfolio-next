@@ -5,9 +5,8 @@ const prisma = new PrismaClient();
 
 const main = async (): Promise<void> => {
   try {
-    await prisma.project.createMany({
-      data: projects,
-    });
+    await prisma.project.deleteMany();
+    await prisma.project.createMany({ data: projects });
   } catch (error) {
     console.log(error);
   }
