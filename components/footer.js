@@ -24,6 +24,7 @@ function Footer() {
         </nav>
         <p>​© Tous droits réservés {new Date().getFullYear()}</p>
       </div>
+      <br />
     </footer>
   );
 }
