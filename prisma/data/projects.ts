@@ -80,7 +80,7 @@ const projects = [
     image_2: "estate2.png",
     image_3: "estate3.png",
     image_4: "estate4.png",
-    url_live: "https://denis-farkas.students-laplateforme.io/agence/home/index",
+    url_live: "",
     url: "estate",
     integration: false,
   },
