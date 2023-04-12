@@ -222,10 +222,10 @@
     "@typescript-eslint/types" "5.40.1"
     "eslint-visitor-keys" "^3.3.0"
 
-"@vercel/analytics@^0.1.8":
-  "integrity" "sha512-PQrOI8BJ9qUiVJuQfnKiJd15eDjDJH9TBKsNeMrtelT4NAk7d9mBVz1CoZkvoFnHQ0OW7Xnqmr1F2nScfAnznQ=="
-  "resolved" "https://registry.npmjs.org/@vercel/analytics/-/analytics-0.1.8.tgz"
-  "version" "0.1.8"
+"@vercel/analytics@^0.1.11":
+  "integrity" "sha512-mj5CPR02y0BRs1tN3oZcBNAX9a8NxsIUl9vElDPcqxnMfP0RbRc9fI9Ud7+QDg/1Izvt5uMumsr+6YsmVHcyuw=="
+  "resolved" "https://registry.npmjs.org/@vercel/analytics/-/analytics-0.1.11.tgz"
+  "version" "0.1.11"
 
 "acorn-jsx@^5.3.2":
   "integrity" "sha512-rq9s+JNhf0IChjtDXxllJ7g41oZk5SlXtp0LHwyA5cejwn7vKmKp4pPri6YEePv2PU65sAsegbXtIinmDFDXgQ=="
