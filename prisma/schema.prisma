@@ -7,7 +7,7 @@ generator client {
 
 datasource db {
   provider = "mysql"
-  url      = env("DATABASE_URL")
+  url      = "mysql://portfolio:Lz28yi4?4@localhost:3306/admin_projets?serverVersion=mariadb-10.4.28&charset=utf8mb4"
 }
 
 model Project {
