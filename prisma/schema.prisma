@@ -7,7 +7,7 @@ generator client {
 
 datasource db {
   provider = "mysql"
-  url      = "mysql://portfolio:Lz28yi4?4@localhost:3306/admin_projets?connection_limit=5"
+  url      = "mysql://defar:Df10236589@localhost:3306/projets?connection_limit=5"
 }
 
 model Project {
