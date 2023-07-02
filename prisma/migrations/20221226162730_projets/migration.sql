@@ -3,7 +3,7 @@ CREATE TABLE `Project` (
     `id` INTEGER NOT NULL AUTO_INCREMENT,
     `name` VARCHAR(191) NOT NULL,
     `content` VARCHAR(191) NOT NULL,
-    `created` DATETIME(3) NOT NULL,
+    `created` VARCHAR(191) NOT NULL,
     `frontend` VARCHAR(191) NOT NULL,
     `backend` VARCHAR(191) NOT NULL,
     `image_1` VARCHAR(191) NOT NULL,
